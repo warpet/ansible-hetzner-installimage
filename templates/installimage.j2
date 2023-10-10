@@ -55,7 +55,7 @@ IMAGE /root/.oldroot/nfs/images/{{ installer_image['code'] }}-64-minimal.tar.gz
 ## ========================
 ##  Custom settings
 ## ========================
-{% if additional_settings -%}
+{% if additional_settings is defined and additional_settings -%}
 {% for key, value in additional_settings.items() -%}
 {{ key }} {{ value }}
 {% endfor %}
