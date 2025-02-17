@@ -27,6 +27,8 @@ hostname:
 # distro os/version to install
 images_map:
   ubuntu:
+    - ver: 24.04
+      code: Ubuntu-2404-numbat
     - ver: 21.10
       code: Ubuntu-2110-impish
     - ver: 20.10
